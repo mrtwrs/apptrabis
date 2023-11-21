@@ -1,0 +1,59 @@
+.img{
+    --background: url(../../../assets/img/arnold.jpg)no-repeat center /cover;
+}
+ion-item{
+    --background: transparent;
+
+}
+.all{
+    color:rgb(49, 62, 241);
+}
+.neon-border2 {
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #2f31ce, #4d73f0) 1;
+    border-image-slice: 1;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .icon{
+    position: relative;
+    left: 75px;
+    //instagram
+}
+.icon1{
+    position: relative;
+    right: 45px;
+}
+
+.icon2{
+    position: relative;
+    right: 40px;
+}
+.icon3{
+    position: relative;
+    left: 1px;
+    //twiter
+}
+.icon4{
+    position: relative;
+    right: 52px;
+    //twiter
+}
+.b{
+    position: relative;
+    justify-content: center;
+    left: 50px;
+}
+.card{
+    border-radius: 25px;
+}
+.card1{
+    border-radius: 25px;
+}
+
+.a{
+  text-decoration: none;
+  color:beige;
+  text-align: center;
+}

@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<br>
+<ion-content [fullscreen]="true" class="img">
+  <br>
+  <section class="ion-padding">
+    <article class="ion-padding">
+      <h3 class="blanco ion-text-center ">Agregar rutinas y productos</h3>
+    </article>
+    <nav>
+<!-- Pading -->
+        <ion-item>
+          <ion-label position="floating"  color="dark" class="blanco">Nombre Rutina o/y producto</ion-label>
+          <ion-input class="blanco"  name="name" required [(ngModel)]="rutina.nombre" ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating" class="blanco">Descripcion</ion-label>
+          <ion-input class="blanco"  name="text" type="text" required [(ngModel)]="rutina.descripcion"></ion-input>
+        </ion-item>
+
+        <ion-button expand="block" class="ion-margin-top" [routerLink]="['/listar']"  type="submit" (click)="agregarRutina()">Agregar rutina y/o producto</ion-button>
+    </nav>
+  </section>
+</ion-content>
+
+<!-- Vista de agregar anime-->
+<!-- Esta vista muestra las credenciales necesarias para importar -->

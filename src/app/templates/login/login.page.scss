@@ -1,0 +1,62 @@
+.img{
+    --background: url(../../../assets/img/mamado.png)no-repeat center /cover;
+}
+//imagen de fondo
+ion-item{
+    --background: transparent;
+//opasidad fondo de pantalla
+}
+.all{
+    color:white;
+    border-color: aqua;
+}
+//colores
+.neon-border {
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #00c9ff, #00c9ff) 1;
+    border-image-slice: 1;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  //borde de la carta
+  .icon{
+    position: relative;
+    left: 75px;
+    //instagram
+}
+.icon1{
+    position: relative;
+    right: 45px;
+}
+  //facebook
+.icon2{
+    position: relative;
+    right: 40px;
+}
+.icon3{
+    position: relative;
+    left: 1px;
+    //twiter
+}
+.icon4{
+    position: relative;
+    right: 52px;
+    //wasap
+}
+.b{
+    position: relative;
+    justify-content: center;
+    left: 50px;
+}
+.card{
+    border-radius: 25px;
+}
+.card1{
+    border-radius: 25px;
+}
+.a{
+  text-decoration: none;
+  color:beige;
+  text-align: center;
+}

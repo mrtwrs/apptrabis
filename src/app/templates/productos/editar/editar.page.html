@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="img">
+  <section class="ion-padding">
+    <article class="ion-padding">
+      <h3 class="blanco ion-text-center ">Modificar rutina</h3>
+    </article>
+    <nav>
+      <ion-item>
+        <ion-label position="floating">Nombre rutina</ion-label>
+        <ion-input [(ngModel)]="rutina.nombre" name="name" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Descripción</ion-label>
+        <ion-input [(ngModel)]="rutina.descripcion" name="text" type="text" required></ion-input>
+      </ion-item>
+
+      <ion-button expand="block" class="ion-margin-top" [routerLink]="['/listar']" (click)="actualizarRutina(rutina.id)">Actualizar Anime</ion-button>
+    </nav>
+  </section>
+  <ion-grid>
+  </ion-grid>
+</ion-content>

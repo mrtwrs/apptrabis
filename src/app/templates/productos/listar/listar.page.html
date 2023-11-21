@@ -1,0 +1,42 @@
+<ion-header [translucent]="true" class="">
+  <ion-toolbar class="">
+    <ion-buttons slot="start">
+      <ion-menu-button class=""></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="">Listado  rutinas y productos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true" class="img ion-card">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="10">
+        <ion-button [routerLink]="['/agregar']">
+          Agregar
+          <ion-icon name="cloud-circle"></ion-icon>
+        </ion-button>
+        <ion-button [routerLink]="['/home']">
+          Home
+          <ion-icon name="cloud-circle"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngFor="let rutina of rutina">
+      <ion-col>
+        <ion-card class="ion-padding">
+          <ion-card-header>
+            <ion-card-title class="negro">{{rutina.nombre}}</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            {{rutina.descripcion}}
+          </ion-card-content>
+
+          <ion-button color="warning"  [routerLink]="['/editar', rutina.id]" ><ion-icon name="create">Modificar</ion-icon></ion-button>
+          <ion-button color="danger" (click)="eliminarrutina(rutina.id)"><ion-icon name="trash"></ion-icon></ion-button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
